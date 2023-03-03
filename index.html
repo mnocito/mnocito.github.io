@@ -6,12 +6,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-
-
-
-
+        <div id = "main">
+            <img src="images/logo-desktop-1.png" id="desktopLogo">
+        </div>
+        <div id = "slideshow">
+            
+        </div>
 
         
     </body>
+    <script type="text/javascript">
+        img = document.getElementById("desktopLogo");
+
+        window.onload = setTimeout(function(){
+            img.style.transform = "scale(0.55)";
+            img.style.transition = "all .5s linear";
+        }, 1000)
+
+
+    </script>
 </html>
