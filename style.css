@@ -11,6 +11,40 @@
 #desktopLogo {
 }
 
+#slideshow{
+    margin-top: 84px;
+    /* width: 50%; */
+    border: 3px solid green;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+#slide {
+    margin-top: 84px;
+    border: 3px solid green;
+    /* padding: 10px; */
+    /* top: 50%; */
+    /* left: 50%; */
+}
+
+#fp1 {
+    /* display: block; */
+    /* top: 50%;
+    left: 50%; */
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; */
+    width: 40%;
+    height: auto;
+    max-height: 942px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+  }
+
 @keyframes diagonal-move-anim {
 	0% {
 		top: 50%;
@@ -22,6 +56,11 @@
 	}
 
 }
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 
 
