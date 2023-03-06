@@ -1,43 +1,141 @@
-#main {
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a { 
+    color:#979797;
+    text-decoration:none;
+}
+
+a:hover, a:focus, a:active {
+    color: black;
+}
+
+.active {
+    color: black;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.navbar {
+    top: 20px; 
+    position: absolute;
+    right:26px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: flex-end;
+    gap: 4px 20px;
+}
+
+
+.navlist {
+}
+
+.main {
 	animation: diagonal-move-anim 0.7s linear;
     animation-fill-mode: forwards;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -54%);
     animation-delay: 1s;
 }
 
+.main2{
+    position: absolute;
+    top: 26px; 
+    left: 24px;
+}
+
 #desktopLogo {
+
 }
 
-#slideshow{
+.container {
+
+}
+
+.slideshow{
     margin-top: 84px;
+    border: 3px solid green;
     /* width: 50%; */
-    border: 3px solid green;
-    padding: 10px;
-    top: 50%;
-    left: 50%;
-}
-
-#slide {
-    margin-top: 84px;
-    border: 3px solid green;
     /* padding: 10px; */
+
     /* top: 50%; */
     /* left: 50%; */
+
+    /* flex-flow: column;
+    height: 100%; */
+
+    z-index:1;
+    width:100%;
+    position:absolute;
+}
+.prev{
+    margin-top: 84px;
+    position: absolute;
+    background:transparent;
+    z-index:2;
+    width:45%;
+    height: 942px;
+}
+.next{
+    margin-top: 84px;
+    position: absolute;
+    z-index:2;
+    margin-left:40%;
+    width:60%;
+    background:transparent;
+    height:942px;
 }
 
-#fp1 {
+.slide {
+    border: 3px solid red; 
+    display: inline-block;
+    position: relative;
+    /* padding: 10px; */
+    /* top: 50%; */
+    /* l
+    eft: 50%; */
+}
+
+.captiontext{
+    position: absolute;
+}
+
+.numbertext{ 
+    position:absolute;
+    right:0;
+    color: #979797;
+}
+
+.fp1 {
     /* display: block; */
     /* top: 50%;
     left: 50%; */
     /* margin-left: auto;
     margin-right: auto;
     margin-top: auto; */
-    width: 40%;
+    width: 100%;
     height: auto;
     max-height: 942px;
+}
+
+.prev1 {
+    /* color: white; */
+}
+
+.next {
+    /* color: white; */
 }
 
 .fade {
@@ -61,8 +159,6 @@
     from {opacity: .4} 
     to {opacity: 1}
   }
-
-
 
 /* // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }

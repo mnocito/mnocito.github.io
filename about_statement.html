@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Lumia Nocito Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    </head>
+    <body>
+        <div class = "main2">
+            <img src="images/logo-desktop.png" id="desktopLogo">
+        </div>
+        <nav class="navbar">
+            <a href="./index.html" class="navlist">FASHION</a>
+            <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
+            <a href="./about_statement.html" class="navlist active">ABOUT</a>
+            <div class="break"></div>
+            <a href="./index.html" class="navlist active">STATEMENT</a>
+            <a href="./about_cv_exhibitions.html" class="navlist">CV</a>
+
+
+
+        </nav>
+
+
+
+    </body>
+    <script type="text/javascript">
+        window.onload = setTimeout(function showDiv() {
+            document.getElementById('slideshow fade').style.display = "block";
+            document.getElementById('prev fade').style.display = "block";
+            document.getElementById('next fade').style.display = "block";
+
+        }, 1000) 
+
+        let slideIndex = 1;
+        // showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideshow");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+
+    </script>
+</html>
