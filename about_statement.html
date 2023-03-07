@@ -9,48 +9,35 @@
     </head>
     <body>
         <div class = "main2">
-            <img src="images/logo-desktop.png" id="desktopLogo">
+            <img src="images/logo-desktop-2_clear.svg" id="desktopLogo">
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navlist">FASHION</a>
             <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
             <a href="./about_statement.html" class="navlist active">ABOUT</a>
             <div class="break"></div>
-            <a href="./index.html" class="navlist active">STATEMENT</a>
+            <a href="./about_statement.html" class="navlist active">STATEMENT</a>
             <a href="./about_cv_exhibitions.html" class="navlist">CV</a>
-
-
-
         </nav>
+        <div class="about_statement2">
+            <p class="body_black">Lumia Nocito (b. 1998) is an artist based in New York City. Her main medium is photography. After graduating from The Dalton School, she acquired her BFA from The Cooper Union For the Advancement of Science and Art. Nocito was mentored by Petra Collins throughout her teenage years. Lumia's work has been exhibited in The Metropolitan Museum of Art, The International Center of Photography, and internationally in galleries, such as Showroom MAMA. Her work has been hand picked for shows by curators including Hans Ulrich Obrist, reviewed by art critics including Jerry Saltz, and featured in publications including Juxtapoz Magazine. She is an official Guest Artist speaker at The International Center of Photography and a board member of the CFDA Awards Fashion Guild.
+
+                Nocito has also been interviewed by publications including New York Magazine, Nylon Japan, Nike, Dazed, and i-D, and has modeled for brands including Adidas, Bulgari, Nike, Converse, Marc Jacobs, and publications including Allure, A Magazine, W Magazine, i-D, Vogue Italia, and Nylon Japan.
+                
+                Selected publications include Juxtapoz Magazine, Elle Mexico, Wonderland, WWD, WGSN, Cultured Magazine, Flaunt, Dazed, Garage Magazine, Vogue, and Glamour Magazine.
+                
+                Selected clients include Bloomberg Businessweek, Adidas, Netflix, Nike, Converse, Diesel, Vice, Vogue, Interview Magazine, i-D Magazine, Galore Magazine, DROME Magazine, Milk, Nylon Japan, and IMG Models.
+                
+                For work enquiries please contact hello@lumianocito.com
+                </p>
+                <div class="copyrighttext_about">© 2023, ALL RIGHTS RESERVED</div>
+        </div>
+        <!-- <div class="copyrighttext_about">© 2023, ALL RIGHTS RESERVED</div> -->
 
 
 
     </body>
     <script type="text/javascript">
-        window.onload = setTimeout(function showDiv() {
-            document.getElementById('slideshow fade').style.display = "block";
-            document.getElementById('prev fade').style.display = "block";
-            document.getElementById('next fade').style.display = "block";
-
-        }, 1000) 
-
-        let slideIndex = 1;
-        // showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slideshow");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slides[slideIndex-1].style.display = "block";  
-        }
 
     </script>
 </html>
