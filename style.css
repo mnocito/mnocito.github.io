@@ -197,6 +197,7 @@ a:hover, a:focus, a:active {
     .slide {
         display: inline-block;
         position: relative;
+        left: -1px;
     }
 
 
