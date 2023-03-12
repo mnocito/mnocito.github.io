@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lumia Nocito Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://rsms.me/">
@@ -9,9 +9,10 @@
     </head>
     <body>
         <div class = "main">
-            <img src="images/logo-desktop_clear.svg" id="desktopLogo">
+            <img src="images/logo-desktop_clear.svg" id="desktopLogo" style="display: none">
+            <img src="images/logo-mobile.svg" id="mobileLogo" style="display: none">
         </div>
-        <nav class="navbar">
+        <nav class="navbar" style="display: none" id="navbar fade">
             <a href="./index.html" class="navlist active">FASHION</a>
             <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
             <a href="./about_statement.html" class="navlist">ABOUT</a>
@@ -221,15 +222,30 @@
         </div>
     </body>
     <script type="text/javascript">
-        logo = document.getElementById("desktopLogo");
-        window.onload = setTimeout(function(){
-            logo.style.transform = "scale(0.55)";
-            logo.style.transition = "all .5s linear";
-        }, 1000)
+        var scrollEventHandler = function() {
+            window.scroll(0, window.pageYOffset)
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        console.log(vw);
+        if (vw < 768) {
+            window.onload = setTimeout(function(){
+                document.getElementById("mobileLogo").style.display = "block";
+            }, 1000)
+        }
+        else if (vw >= 768) {
+            logo = document.getElementById("desktopLogo");
+            logo.style.display = "block";
+            window.onload = setTimeout(function(){
+                logo.style.transform = "scale(0.55)";
+                logo.style.transition = "all .5s linear";
+            }, 1000)
+        }
         window.onload = setTimeout(function showDiv() {
             document.getElementById('slideshow fade').style.display = "block";
             document.getElementById('prev fade').style.display = "block";
             document.getElementById('next fade').style.display = "block";
+            document.getElementById('navbar fade').style.display = "flex";
         }, 1900) 
         let slideIndex = 1;
         function plusSlides(n) {

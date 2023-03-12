@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lumia Nocito Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://rsms.me/">
@@ -10,8 +11,9 @@
     <body>
         <div class = "main2">
             <img src="images/logo-desktop-2_clear.svg" id="desktopLogo">
+            <img src="images/logo-mobile.svg" id="mobileLogo">
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="./index.html" class="navlist">FASHION</a>
             <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
             <a href="./about_statement.html" class="navlist active">ABOUT</a>
@@ -21,6 +23,20 @@
             <div class="break"></div>
             <a href="./about_cv_exhibitions.html" class="navlist">EXHIBITIONS</a>
             <a href="./about_cv_photography.html" class="navlist">PHOTOGRAPHY</a>
+            <a href="./about_cv_interviews.html" class="navlist">INTERVIEWS</a>
+            <a href="./about_cv_features.html" class="navlist active">FEATURES</a>
+            <a href="./about_cv_awards.html" class="navlist">AWARDS</a>
+        </nav>
+        <nav class="navbar-ph">
+            <a href="./index.html" class="navlist">FASHION</a>
+            <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
+            <a href="./about_statement.html" class="navlist active">ABOUT</a>
+            <div class="break"></div>
+            <a href="./about_statement.html" class="navlist">STATEMENT</a>
+            <a href="./about_cv_exhibitions.html" class="navlist active">CV</a>
+            <div class="break"></div>
+            <a href="./about_cv_exhibitions.html" class="navlist">EXHIBITIONS</a>
+            <a href="./about_cv_photography.html" class="navlist" id="photo">PHOTOGRAPHY</a>
             <a href="./about_cv_interviews.html" class="navlist">INTERVIEWS</a>
             <a href="./about_cv_features.html" class="navlist active">FEATURES</a>
             <a href="./about_cv_awards.html" class="navlist">AWARDS</a>
@@ -157,7 +173,17 @@
 
     </body>
     <script type="text/javascript">
-
-
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        console.log(vw);
+        if (vw < 768) {
+            window.onload = function() {
+            document.getElementById('navbar').style.display = "none";
+            }
+        }
+        if (vw < 321) {
+            window.onload = function() {
+            document.getElementById('photo').innerHTML = "PHOTO";
+            }
+        }
     </script>
 </html>

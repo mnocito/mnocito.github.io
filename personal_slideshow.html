@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lumia Nocito Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://rsms.me/">
@@ -10,6 +11,7 @@
     <body>
         <div class = "main2">
             <img src="images/logo-desktop-2_clear.svg" id="desktopLogo">
+            <img src="images/logo-mobile.svg" id="mobileLogo">
         </div>
         <nav class="navbar">
             <a href="./index.html" class="navlist">FASHION</a>
@@ -176,6 +178,11 @@
         </div>
     </body>
     <script type="text/javascript">
+        var scrollEventHandler = function() {
+            window.scroll(0, window.pageYOffset)
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
+
         window.onload = setTimeout(function showDiv() {
             document.getElementById('slideshow fade').style.display = "block";
             document.getElementById('prev fade').style.display = "block";
