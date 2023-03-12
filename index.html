@@ -229,9 +229,7 @@
         const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         console.log(vw);
         if (vw < 768) {
-            window.onload = setTimeout(function(){
-                document.getElementById("mobileLogo").style.display = "block";
-            }, 1000)
+            document.getElementById("mobileLogo").style.display = "block";
         }
         else if (vw >= 768) {
             logo = document.getElementById("desktopLogo");
