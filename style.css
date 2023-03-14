@@ -46,6 +46,9 @@ a:hover, a:focus, a:active {
     #hov {
         display: none;
     }
+    #hovv {
+        display: none;
+    }
     .navbar {
         bottom: 16px;
         position: absolute;
