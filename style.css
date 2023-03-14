@@ -37,8 +37,15 @@ a:hover, a:focus, a:active {
         display: block;
         margin-left: 16px;
         margin-top: 16px;
-    }
+        top:0;
 
+        position: fixed;
+        z-index: 999; /* So that it is not under the other elements */
+        background: transparent;
+    }
+    #hov {
+        display: none;
+    }
     .navbar {
         bottom: 16px;
         position: absolute;
@@ -49,65 +56,95 @@ a:hover, a:focus, a:active {
         gap: 4px 20px;
     }
     .navbar-ft {
-        top: 925px;
+        /* top: 925px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; 
+        background: white;
     }
     .navbar-pt {
-        top: 820px;
+        /* top: 820px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; 
+        background: white;
     }
 
     .navbar-ex {
-        top: 800px;
+        /* top: 800px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; 
+        background: white;
     }
     .navbar-ph {
-        top: 2100px;
+        /* top: 2100px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; 
+        background: white;
     }
     .navbar-in {
-        top: 1320px;
+        /* top: 1320px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; /* So that it is not under the other elements */
+        background: white;
     }
     .navbar-aw {
-        top: 980px;
+        /* top: 980px; */
         padding-bottom: 16px;
-        position: absolute;
+        /* position: absolute; */
         right: 16px;
         display:flex;
         flex-flow:row wrap;
         justify-content: flex-end;
         gap: 4px 20px;
+
+        bottom: 0;
+        position: fixed;
+        z-index: 999; /* So that it is not under the other elements */
+        background: white;
     }
 
 
@@ -121,11 +158,11 @@ a:hover, a:focus, a:active {
         animation-delay: 1s; */
     }
 
-    /* .main2{
-        position: absolute;
+    .main2{
+        /* position: absolute;
         margin-top: 26px; 
-        margin-left: 24px;
-    } */
+        margin-left: 24px; */
+    }
 
     .about_statement{
         position: absolute;
@@ -163,7 +200,16 @@ a:hover, a:focus, a:active {
     }
 
     .slideshow{
-        margin-top: 30px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        z-index:1;
+        width:100%;
+
+        /* margin-top: 30px; */
         /* width: 50%; */
         /* padding: 10px; */
 
@@ -172,10 +218,6 @@ a:hover, a:focus, a:active {
 
         /* flex-flow: column;
         height: 100%; */
-        left: 0px;
-        z-index:1;
-        width:100%;
-        position:absolute;
     }
     .prev{
         margin-top: 84px;
@@ -201,7 +243,7 @@ a:hover, a:focus, a:active {
     }
 
 
-    #fp1440 {
+    .fp1 {
         width: 100%;
         max-width: 343px;
         height: auto;
@@ -224,8 +266,8 @@ a:hover, a:focus, a:active {
     .copyrighttext{ 
         font-size: 10px;
         position:absolute;
-        margin-left: 24px;
-        margin-top: 21px;
+        margin-left: 16px;
+        margin-top: 4px;
         color: #979797;
     }
     .copyrighttext_about{ 
@@ -260,7 +302,7 @@ a:hover, a:focus, a:active {
     }
 
     .thumbnails {
-        margin-top: 30px;
+        margin-top: 42px;
         margin-left: 16px;
         margin-right: 16px;
         display: grid;
@@ -268,6 +310,8 @@ a:hover, a:focus, a:active {
         grid-gap: 8px;
     }
     .thumbnails img {width: 80px; height:auto; align-self: end;}
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -353,7 +397,7 @@ a:hover, a:focus, a:active {
 
 
     .slideshow{
-        margin-top: 84px;
+        margin-top: 34px;
         /* width: 50%; */
         /* padding: 10px; */
 
@@ -366,6 +410,10 @@ a:hover, a:focus, a:active {
         z-index:1;
         width:100%;
         position:absolute;
+
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
     .prev{
         margin-top: 84px;
@@ -374,6 +422,7 @@ a:hover, a:focus, a:active {
         z-index:2;
         width:45%;
         height: 700px;
+        cursor: none;
     }
     .next{
         margin-top: 84px;
@@ -383,6 +432,7 @@ a:hover, a:focus, a:active {
         width:60%;
         background:transparent;
         height:700px;
+        cursor: none;
     }
     .slide {
         display: inline-block;
@@ -426,7 +476,7 @@ a:hover, a:focus, a:active {
         padding-bottom: 20px;
     } */
 
-    #fp1440 {
+    .fp1 {
         width: 100%;
         max-width: 1164px;
         height: auto;
@@ -462,4 +512,50 @@ a:hover, a:focus, a:active {
         grid-gap: 24px;
     }
     .thumbnails img {width: 212px; height:auto; align-self: end;}
+
+    div:hover > #hov{
+        display : block;
+    }
+    #hov{
+        display:none;
+        position:absolute;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+      }
+    div:hover > #hovv{
+        display : block;
+    }
+    #hovv{
+        display:none;
+        position:absolute;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .prev{
+        margin-top: 84px;
+        position: absolute;
+        background:transparent;
+        z-index:2;
+        width:45%;
+        height: 860px;
+        cursor: none;
+    }
+    .next{
+        margin-top: 84px;
+        position: absolute;
+        z-index:2;
+        margin-left:40%;
+        width:60%;
+        background:transparent;
+        height: 860px;
+        cursor: none;
+    }
+
 }

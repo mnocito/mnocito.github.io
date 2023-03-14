@@ -21,27 +21,27 @@
             <a href="./index.html" class="navlist active">SLIDESHOW</a>
             <a href="./personal_thumbnails.html" class="navlist">THUMBNAILS</a>
         </nav>
-        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)"></div>
+        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="custom(event)"><div id="hov">prev</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
-              <img src="Personal/PersonalPortfolio-01.jpg" class = "fp1" id="fp1440">
-              <div class="captiontext">TO SEE BEFORE YOU MAKE</div>
-              <div class="numbertext">1 / 17</div>
+              <img src="Personal/PersonalPortfolio-01.jpg" class = "fp1" id="pp1">
+              <div class="captiontext" id="ct1">TO SEE BEFORE YOU MAKE</div>
+              <div class="numbertext" id="nt1">1 / 17</div>
             </div>
             </center>
         </div>
-        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)"></div>
+        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)"onmousemove="custom(event)"><div id="hovv">next</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
-              <img src="Personal/PersonalPortfolio-02.jpg" class = "fp1" id="fp1440">
+              <img src="Personal/PersonalPortfolio-02.jpg" class = "fp1" id="pp2">
               <div class="captiontext">TO SEE BEFORE YOU MAKE</div>
               <div class="numbertext">2 / 17<p>
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp3" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-03.jpg" class = "fp1" id="fp1440">
@@ -50,7 +50,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp4" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-04.jpg" class = "fp1" id="fp1440">
@@ -59,7 +59,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp5" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-05.jpg" class = "fp1" id="fp1440">
@@ -68,7 +68,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp6" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-06.jpg" class = "fp1" id="fp1440">
@@ -77,7 +77,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp7" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-07.jpg" class = "fp1" id="fp1440">
@@ -86,7 +86,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp8" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-08.jpg" class = "fp1" id="fp1440">
@@ -95,7 +95,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp9" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-09.jpg" class = "fp1" id="fp1440">
@@ -104,7 +104,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp10" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-10.jpg" class = "fp1" id="fp1440">
@@ -113,7 +113,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp11" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-11.jpg" class = "fp1" id="fp1440">
@@ -122,7 +122,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp12" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-12.jpg" class = "fp1" id="fp1440">
@@ -131,7 +131,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp13" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-13.jpg" class = "fp1" id="fp1440">
@@ -140,7 +140,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp14" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-14.jpg" class = "fp1" id="fp1440">
@@ -149,7 +149,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp15" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-15.jpg" class = "fp1" id="fp1440">
@@ -158,7 +158,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp16" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-16.jpg" class = "fp1" id="fp1440">
@@ -167,7 +167,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="pp17" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Personal/PersonalPortfolio-17.jpg" class = "fp1" id="fp1440">
@@ -178,17 +178,6 @@
         </div>
     </body>
     <script type="text/javascript">
-        var scrollEventHandler = function() {
-            window.scroll(0, window.pageYOffset)
-        }
-        window.addEventListener("scroll", scrollEventHandler, false);
-
-        window.onload = setTimeout(function showDiv() {
-            document.getElementById('slideshow fade').style.display = "block";
-            document.getElementById('prev fade').style.display = "block";
-            document.getElementById('next fade').style.display = "block";
-
-        }, 500) 
         let slideIndex = 1;
         function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -201,7 +190,47 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
             }
-            slides[slideIndex-1].style.display = "block";  
+            slides[slideIndex-1].style.display = "block"; 
+            if (slideIndex !== 0) {
+                document.getElementById("pp1").style.visibility="hidden";
+                document.getElementById("ct1").style.visibility="hidden";
+                document.getElementById("nt1").style.visibility="hidden";
+            }
+            if (slideIndex === 1){
+                document.getElementById("pp1").style.visibility="visible";
+                document.getElementById("ct1").style.visibility="visible";
+                document.getElementById("nt1").style.visibility="visible";
+            }
         }
+        if (window.location.hash) {
+            document.getElementById(window.location.hash.split("#")[1]).style.display = "block";
+            var index = parseInt(window.location.hash.split("pp")[1]); 
+            slideIndex = index;
+            showSlides(index);
+        }
+        
+        function custom(event){
+        var el = document.getElementById("hov");
+        var el2 = document.getElementById("hovv");
+            el.style.top = event.clientY - 100 + "px";
+            el.style.left = event.clientX + "px";
+            el2.style.top = event.clientY - 100 + "px";
+            el2.style.left = event.clientX - 550 + "px";
+        }
+        document.getElementById('prev fade').addEventListener('mousemove', custom);
+        document.getElementById('next fade').addEventListener('mousemove', custom);
+
+        var scrollEventHandler = function() {
+            window.scroll(0, window.pageYOffset);
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
+
+        window.onload = setTimeout(function showDiv() {
+            document.getElementById('slideshow fade').style.display = "block";
+            document.getElementById('prev fade').style.display = "block";
+            document.getElementById('next fade').style.display = "block";
+
+        }, 500) 
+
     </script>
 </html>

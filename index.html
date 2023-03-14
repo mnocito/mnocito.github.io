@@ -12,6 +12,9 @@
             <img src="images/logo-desktop_clear.svg" id="desktopLogo" style="display: none">
             <img src="images/logo-mobile.svg" id="mobileLogo" style="display: none">
         </div>
+        <div class = "main2" style="visibility: hidden">
+            <img src="images/logo-desktop-2_clear.svg" id="desktopLogo2" style="visibility: hidden">
+        </div>
         <nav class="navbar" style="display: none" id="navbar fade">
             <a href="./index.html" class="navlist active">FASHION</a>
             <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
@@ -20,27 +23,27 @@
             <a href="./index.html" class="navlist active">SLIDESHOW</a>
             <a href="./fashion_thumbnails.html" class="navlist">THUMBNAILS</a>
         </nav>
-        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)"></div>
+        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="custom(event)"><div id="hov">prev</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
-              <img src="Fashion/Portfolio-00.jpg" class = "fp1" id="fp1440">
-              <div class="captiontext">ABRAND DENIM CAMPAIGN</div>
-              <div class="numbertext">1 / 22</div>
+              <img src="Fashion/Portfolio-00.jpg" class = "fp1" id="fsl1">
+              <div class="captiontext" id="fct1">ABRAND DENIM CAMPAIGN</div>
+              <div class="numbertext" id="fnt1">1 / 22</div>
             </div>
             </center>
         </div>
-        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)"></div>
+        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)" onmousemove="custom(event)"><div id="hovv">next</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
-              <img src="Fashion/Portfolio-01.jpeg" class = "fp1" id="fp1440">
+              <img src="Fashion/Portfolio-01.jpeg" class = "fp1" id="fsl2">
               <div class="captiontext">INTERVIEW MAGAZINE</div>
               <div class="numbertext">2 / 22<p>
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl3" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-02.jpg" class = "fp1" id="fp1440">
@@ -49,7 +52,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl4" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-03.jpg" class = "fp1" id="fp1440">
@@ -58,7 +61,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl5" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-04.jpg" class = "fp1" id="fp1440">
@@ -67,7 +70,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl6" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-05.jpg" class = "fp1" id="fp1440">
@@ -76,7 +79,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl7" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-06.jpg" class = "fp1" id="fp1440">
@@ -85,7 +88,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl8" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-07.jpg" class = "fp1" id="fp1440">
@@ -94,7 +97,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl9" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-08.jpg" class = "fp1" id="fp1440">
@@ -103,7 +106,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl10" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-09.jpg" class = "fp1" id="fp1440">
@@ -112,7 +115,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl11" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-10.jpg" class = "fp1" id="fp1440">
@@ -121,7 +124,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl12" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-11.jpg" class = "fp1" id="fp1440">
@@ -130,7 +133,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl13" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-12.jpg" class = "fp1" id="fp1440">
@@ -139,7 +142,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl14" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-13.jpg" class = "fp1" id="fp1440">
@@ -148,7 +151,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl15" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-14.jpg" class = "fp1" id="fp1440">
@@ -157,7 +160,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl16" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-15.jpg" class = "fp1" id="fp1440">
@@ -166,7 +169,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl17" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-16.jpg" class = "fp1" id="fp1440">
@@ -175,7 +178,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl18" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-17.jpg" class = "fp1" id="fp1440">
@@ -184,7 +187,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl19" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-18.jpg" class = "fp1" id="fp1440">
@@ -193,7 +196,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl20" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-19.jpg" class = "fp1" id="fp1440">
@@ -202,7 +205,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl21" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-20.jpg" class = "fp1" id="fp1440">
@@ -211,7 +214,7 @@
             </div>
             </center>
         </div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
+        <div class="slideshow fade" id="fsl22" style="display: none;">
             <center>
             <div class="slide" id="slide">
                 <img src="Fashion/Portfolio-21.jpg" class = "fp1" id="fp1440">
@@ -228,23 +231,50 @@
         window.addEventListener("scroll", scrollEventHandler, false);
         const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
         console.log(vw);
+
+        function custom(event){
+        var el = document.getElementById("hov");
+        var el2 = document.getElementById("hovv");
+            el.style.top = event.clientY - 100 + "px";
+            el.style.left = event.clientX + "px";
+            el2.style.top = event.clientY - 100 + "px";
+            el2.style.left = event.clientX - 550 + "px";
+        }
+        document.getElementById('prev fade').addEventListener('mousemove', custom);
+        document.getElementById('next fade').addEventListener('mousemove', custom);
         if (vw < 768) {
             document.getElementById("mobileLogo").style.display = "block";
+            document.getElementById('navbar fade').style.display = "flex";
+            window.onload = setTimeout(function showDiv() {
+                document.getElementById('slideshow fade').style.display = "block";
+                document.getElementById('prev fade').style.display = "block";
+                document.getElementById('next fade').style.display = "block";
+            }, 500) 
         }
         else if (vw >= 768) {
             logo = document.getElementById("desktopLogo");
-            logo.style.display = "block";
-            window.onload = setTimeout(function(){
+            if (!window.location.hash) {
+                logo.style.display = "block";
+                window.onload = setTimeout(function(){
                 logo.style.transform = "scale(0.55)";
                 logo.style.transition = "all .5s linear";
-            }, 1000)
+                }, 1000)
+                window.onload = setTimeout(function showDiv() {
+                document.getElementById('slideshow fade').style.display = "block";
+                document.getElementById('prev fade').style.display = "block";
+                document.getElementById('next fade').style.display = "block";
+                document.getElementById('navbar fade').style.display = "flex";
+                }, 1900) 
+            } 
+            else {
+                logo.style.display = "none";
+                document.getElementById("desktopLogo2").style.visibility = "visible";
+                document.getElementById('navbar fade').style.display = "flex";
+                // document.getElementById('slideshow fade').style.display = "block";
+                document.getElementById('prev fade').style.display = "block";
+                document.getElementById('next fade').style.display = "block";
+            }
         }
-        window.onload = setTimeout(function showDiv() {
-            document.getElementById('slideshow fade').style.display = "block";
-            document.getElementById('prev fade').style.display = "block";
-            document.getElementById('next fade').style.display = "block";
-            document.getElementById('navbar fade').style.display = "flex";
-        }, 1900) 
         let slideIndex = 1;
         function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -257,7 +287,26 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
             }
-            slides[slideIndex-1].style.display = "block";  
+            slides[slideIndex-1].style.display = "block"; 
+            if (slideIndex !== 0) {
+                document.getElementById("fsl1").style.visibility="hidden";
+                document.getElementById("fct1").style.visibility="hidden";
+                document.getElementById("fnt1").style.visibility="hidden";
+                // document.getElementById("hov").innerHTML= slideIndex.toString();
+            }
+            if (slideIndex === 1){
+                console.log(slideIndex);
+                document.getElementById("fsl1").style.visibility="visible";
+                document.getElementById("fct1").style.visibility="visible";
+                document.getElementById("fnt1").style.visibility="visible";
+                // document.getElementById("hov").innerHTML= slideIndex.toString();
+            }
+        }
+        if (window.location.hash) {
+            document.getElementById(window.location.hash.split("#")[1]).style.display = "block";
+            var index = parseInt(window.location.hash.split("fsl")[1]); 
+            slideIndex = index;
+            showSlides(index);
         }
     </script>
 </html>
