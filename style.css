@@ -49,6 +49,9 @@ a:hover, a:focus, a:active {
     #hovv {
         display: none;
     }
+    #white_text {
+        color: transparent;
+    }
     .navbar {
         bottom: 16px;
         position: absolute;
@@ -318,6 +321,9 @@ a:hover, a:focus, a:active {
 }
 
 @media only screen and (min-width: 768px) {
+    #filler {
+        display: none;
+    }
     .navbar {
         margin-top: 20px; 
         position: absolute;
@@ -541,6 +547,9 @@ a:hover, a:focus, a:active {
 }
 
 @media only screen and (min-width: 1800px) {
+    #filler {
+        display: none;
+    }
     .prev{
         margin-top: 84px;
         position: absolute;
