@@ -528,10 +528,14 @@ a:hover, a:focus, a:active {
     #hov{
         display:none;
         position:absolute;
-        font-style: italic;
-        font-size: 16px;
-        font-weight: bold;
+        /* font-style: italic; */
+        /* font-size: 16px; */
+        /* font-weight: bold; */
         color: black;
+        font-size: 10px;
+        Letter-spacing: -0.01em;
+        line-height: 12px;
+        font-weight: 500;
       }
     div:hover > #hovv{
         display : block;
@@ -539,10 +543,11 @@ a:hover, a:focus, a:active {
     #hovv{
         display:none;
         position:absolute;
-        font-style: italic;
-        font-size: 16px;
-        font-weight: bold;
         color: black;
+        font-size: 10px;
+        Letter-spacing: -0.01em;
+        line-height: 12px;
+        font-weight: 500;
     }
 }
 

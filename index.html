@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     </head>
     <body>
-        <div class = "main">
-            <img src="images/logo-desktop_clear.svg" id="desktopLogo" style="display: none">
-            <img src="images/logo-mobile.svg" id="mobileLogo" style="display: none">
+        <div class = "main2">
+            <img src="images/logo-desktop-2_clear.svg" id="desktopLogo">
+            <img src="images/logo-mobile.svg" id="mobileLogo">
         </div>
-        <div class = "main2" style="visibility: hidden">
+        <!-- <div class = "main2" style="visibility: hidden">
             <img src="images/logo-desktop-2_clear.svg" id="desktopLogo2" style="visibility: hidden">
-        </div>
+        </div> -->
         <nav class="navbar" style="display: none" id="navbar fade">
             <a href="./index.html" class="navlist active">FASHION</a>
             <a href="./personal_slideshow.html" class="navlist">PERSONAL</a>
@@ -23,7 +23,7 @@
             <a href="./index.html" class="navlist active">SLIDESHOW</a>
             <a href="./fashion_thumbnails.html" class="navlist">THUMBNAILS</a>
         </nav>
-        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="custom(event)"><div id="hov">prev</div></div>
+        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="custom(event)"><div id="hov">PREV</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
@@ -33,7 +33,7 @@
             </div>
             </center>
         </div>
-        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)" onmousemove="custom(event)"><div id="hovv">next</div></div>
+        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)" onmousemove="custom(event)"><div id="hovv">NEXT</div></div>
         <div class="slideshow fade" id="slideshow fade" style="display: none;">
             <center>
             <div class="slide" id="slide">
@@ -243,6 +243,7 @@
         document.getElementById('prev fade').addEventListener('mousemove', custom);
         document.getElementById('next fade').addEventListener('mousemove', custom);
         if (vw < 768) {
+            document.getElementById("desktopLogo").style.display = "none";
             document.getElementById("mobileLogo").style.display = "block";
             document.getElementById('navbar fade').style.display = "flex";
             window.onload = setTimeout(function showDiv() {
@@ -255,20 +256,20 @@
             logo = document.getElementById("desktopLogo");
             if (!window.location.hash) {
                 logo.style.display = "block";
-                window.onload = setTimeout(function(){
-                logo.style.transform = "scale(0.55)";
-                logo.style.transition = "all .5s linear";
-                }, 1000)
+                // window.onload = setTimeout(function(){
+                // logo.style.transform = "scale(0.55)";
+                // logo.style.transition = "all .5s linear";
+                // }, 1000)
                 window.onload = setTimeout(function showDiv() {
                 document.getElementById('slideshow fade').style.display = "block";
                 document.getElementById('prev fade').style.display = "block";
                 document.getElementById('next fade').style.display = "block";
                 document.getElementById('navbar fade').style.display = "flex";
-                }, 1900) 
+                }, 1000) 
             } 
             else {
-                logo.style.display = "none";
-                document.getElementById("desktopLogo2").style.visibility = "visible";
+                logo.style.display = "block";
+                document.getElementById("desktopLogo").style.visibility = "visible";
                 document.getElementById('navbar fade').style.display = "flex";
                 // document.getElementById('slideshow fade').style.display = "block";
                 document.getElementById('prev fade').style.display = "block";
