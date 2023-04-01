@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     </head>
     <body>
+        <div id="marco" style="display: block;" onclick="changeSlides(event)" onmousemove="updateCursor(event)"><div id="marcon"></div></div>
+        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="updateCursor(event)"><div id="hov"></div></div>
+        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)" onmousemove="updateCursor(event)"><div id="hovv"></div></div>
         <div class = "main2">
             <img src="images/logo-desktop-2_clear.svg" id="desktopLogo">
             <img src="images/logo-mobile.svg" id="mobileLogo">
@@ -23,232 +26,239 @@
             <a href="./index.html" class="navlist active">SLIDESHOW</a>
             <a href="./fashion_thumbnails.html" class="navlist">THUMBNAILS</a>
         </nav>
-        <div class="prev fade" id="prev fade" style="display: none;" onclick="plusSlides(-1)" onmousemove="custom(event)"><div id="hov">PREV</div></div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-              <img src="Fashion/Portfolio-00.jpg" class = "fp1" id="fsl1">
-              <div class="captiontext" id="fct1">ABRAND DENIM CAMPAIGN</div>
-              <div class="numbertext" id="fnt1">1/22</div>
+        <div class="allslideshows" style="cursor: none;" onmouseleave="hideCursor()">
+            <div class="slideshow fade" id="slideshow fade" style="display: none;" onmouseleave="hideCursor()">
+                <center>
+                <div class="slide" id="slide">
+                  <img src="Fashion/Portfolio-00.jpg" class = "fp1" id="fsl1">
+                  <div class="captiontext" id="fct1">ABRAND DENIM CAMPAIGN</div>
+                  <div class="numbertext" id="fnt1">1/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="next fade" id="next fade" style="display: none;" onclick="plusSlides(1)" onmousemove="custom(event)"><div id="hovv">NEXT</div></div>
-        <div class="slideshow fade" id="slideshow fade" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-              <img src="Fashion/Portfolio-01.jpeg" class = "fp1" id="fsl2">
-              <div class="captiontext">INTERVIEW MAGAZINE</div>
-              <div class="numbertext">2/22<p>
+            <div class="slideshow fade" id="slideshow fade" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                  <img src="Fashion/Portfolio-01.jpeg" class = "fp1" id="fsl2">
+                  <div class="captiontext">INTERVIEW MAGAZINE</div>
+                  <div class="numbertext">2/22<p>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl3" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-02.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
-                <div class="numbertext">3/22</div>
+            <div class="slideshow fade" id="fsl3" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-02.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
+                    <div class="numbertext">3/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl4" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-03.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">COVETEUR</div>
-                <div class="numbertext">4/22</div>
+            <div class="slideshow fade" id="fsl4" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-03.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">COVETEUR</div>
+                    <div class="numbertext">4/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl5" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-04.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">AMALIE FOR BURBERRY SOCIAL</div>
-                <div class="numbertext">5/22</div>
+            <div class="slideshow fade" id="fsl5" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-04.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">AMALIE FOR BURBERRY SOCIAL</div>
+                    <div class="numbertext">5/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl6" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-05.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">INTERVIEW MAGAZINE</div>
-                <div class="numbertext">6/22</div>
+            <div class="slideshow fade" id="fsl6" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-05.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">INTERVIEW MAGAZINE</div>
+                    <div class="numbertext">6/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl7" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-06.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">MIAOU SPRING CAMPAIGN</div>
-                <div class="numbertext">7/22</div>
+            <div class="slideshow fade" id="fsl7" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-06.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">MIAOU SPRING CAMPAIGN</div>
+                    <div class="numbertext">7/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl8" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-07.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">INTERVIEW MAGAZINE</div>
-                <div class="numbertext">8/22</div>
+            <div class="slideshow fade" id="fsl8" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-07.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">INTERVIEW MAGAZINE</div>
+                    <div class="numbertext">8/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl9" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-08.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">NIKE CAMPAIGN</div>
-                <div class="numbertext">9/22</div>
+            <div class="slideshow fade" id="fsl9" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-08.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">NIKE CAMPAIGN</div>
+                    <div class="numbertext">9/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl10" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-09.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">ELISA JOHNSON</div>
-                <div class="numbertext">10/22</div>
+            <div class="slideshow fade" id="fsl10" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-09.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">ELISA JOHNSON</div>
+                    <div class="numbertext">10/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl11" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-10.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">COVETEUR</div>
-                <div class="numbertext">11/22</div>
+            <div class="slideshow fade" id="fsl11" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-10.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">COVETEUR</div>
+                    <div class="numbertext">11/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl12" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-11.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">NYLON JAPAN</div>
-                <div class="numbertext">12/22</div>
+            <div class="slideshow fade" id="fsl12" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-11.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">NYLON JAPAN</div>
+                    <div class="numbertext">12/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl13" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-12.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">MISSION STATEMENT MAGAZINE</div>
-                <div class="numbertext">13/22</div>
+            <div class="slideshow fade" id="fsl13" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-12.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">MISSION STATEMENT MAGAZINE</div>
+                    <div class="numbertext">13/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl14" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-13.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">MIAOU SPRING CAMPAIGN</div>
-                <div class="numbertext">14/22</div>
+            <div class="slideshow fade" id="fsl14" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-13.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">MIAOU SPRING CAMPAIGN</div>
+                    <div class="numbertext">14/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl15" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-14.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">NYLON JAPAN</div>
-                <div class="numbertext">15/22</div>
+            <div class="slideshow fade" id="fsl15" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-14.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">NYLON JAPAN</div>
+                    <div class="numbertext">15/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl16" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-15.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
-                <div class="numbertext">16/22</div>
+            <div class="slideshow fade" id="fsl16" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-15.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
+                    <div class="numbertext">16/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl17" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-16.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">INTERVIEW MAGAZINE</div>
-                <div class="numbertext">17/22</div>
+            <div class="slideshow fade" id="fsl17" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-16.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">INTERVIEW MAGAZINE</div>
+                    <div class="numbertext">17/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl18" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-17.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
-                <div class="numbertext">18/22</div>
+            <div class="slideshow fade" id="fsl18" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-17.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
+                    <div class="numbertext">18/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl19" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-18.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">NIKE CAMPAIGN</div>
-                <div class="numbertext">19/22</div>
+            <div class="slideshow fade" id="fsl19" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-18.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">NIKE CAMPAIGN</div>
+                    <div class="numbertext">19/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl20" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-19.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">OUR TREATY</div>
-                <div class="numbertext">20/22</div>
+            <div class="slideshow fade" id="fsl20" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-19.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">OUR TREATY</div>
+                    <div class="numbertext">20/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl21" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-20.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
-                <div class="numbertext">21/22</div>
+            <div class="slideshow fade" id="fsl21" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-20.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">URBAN OUTFITTERS EDITORIAL</div>
+                    <div class="numbertext">21/22</div>
+                </div>
+                </center>
             </div>
-            </center>
-        </div>
-        <div class="slideshow fade" id="fsl22" style="display: none;">
-            <center>
-            <div class="slide" id="slide">
-                <img src="Fashion/Portfolio-21.jpg" class = "fp1" id="fp1440">
-                <div class="captiontext">MISSION STATEMENT MAGAZINE</div>
-                <div class="numbertext">22/22</div>
+            <div class="slideshow fade" id="fsl22" style="display: none;">
+                <center>
+                <div class="slide" id="slide">
+                    <img src="Fashion/Portfolio-21.jpg" class = "fp1" id="fp1440">
+                    <div class="captiontext">MISSION STATEMENT MAGAZINE</div>
+                    <div class="numbertext">22/22</div>
+                </div>
+                </center>
             </div>
-            </center>
         </div>
+
     </body>
     <script type="text/javascript">
+        var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        window.addEventListener("resize", resizeEventHandler, false);
+        var resizeEventHandler = function () {
+            print("resize")
+            vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) 
+        }
+
+
         var scrollEventHandler = function() {
             window.scroll(0, window.pageYOffset)
         }
         window.addEventListener("scroll", scrollEventHandler, false);
-        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-        console.log(vw);
         if (vw < 1600) {
             function custom(event){
-            var el = document.getElementById("hov");
-            var el2 = document.getElementById("hovv");
-                el.style.top = event.clientY - 100 + "px";
-                el.style.left = event.clientX + "px";
-                el2.style.top = event.clientY - 90 + "px";
-                el2.style.left = event.clientX - 600 + "px";
+                var el = document.getElementById("hov");
+                var el2 = document.getElementById("hovv");
+                el.style.top = event.pageY + "px";
+                el.style.left = event.pageX + "px";
+                el2.style.top = event.pageY + "px";
+                el2.style.left = event.pageX + "px";
             }
         }
         else if (vw > 1600) {
             function custom(event){
-            var el = document.getElementById("hov");
-            var el2 = document.getElementById("hovv");
-                el.style.top = event.clientY - 100 + "px";
-                el.style.left = event.clientX + "px";
-                el2.style.top = event.clientY - 90 + "px";
-                el2.style.left = event.clientX - 800 + "px";
+                var el = document.getElementById("hov");
+                var el2 = document.getElementById("hovv");
+                el.style.top = event.pageY + "px";
+                el.style.left = event.pageX + "px";
+                el2.style.top = event.pageY + "px";
+                el2.style.left = event.pageX + "px";
             }
         }
         document.getElementById('prev fade').addEventListener('mousemove', custom);
@@ -258,11 +268,11 @@
             logo.style.visibility = "hidden";
             document.getElementById("mobileLogo").style.display = "block";
             document.getElementById('navbar fade').style.display = "flex";
-            window.onload = setTimeout(function showDiv() {
+            window.onload = function () {
                 document.getElementById('slideshow fade').style.display = "block";
                 document.getElementById('prev fade').style.display = "block";
                 document.getElementById('next fade').style.display = "block";
-            }, 500) 
+            }
         }
         else if (vw >= 768) {
             document.getElementById('navbar fade').style.display = "flex";
@@ -274,11 +284,11 @@
                 // logo.style.transform = "scale(0.55)";
                 // logo.style.transition = "all .5s linear";
                 // }, 1000)
-                window.onload = setTimeout(function showDiv() {
-                document.getElementById('slideshow fade').style.display = "block";
-                document.getElementById('prev fade').style.display = "block";
-                document.getElementById('next fade').style.display = "block";
-                }, 1000) 
+                    window.onload = function () {
+                    document.getElementById('slideshow fade').style.display = "block";
+                    document.getElementById('prev fade').style.display = "block";
+                    document.getElementById('next fade').style.display = "block";
+                }
             } 
             else {
                 // logo.style.display = "block";
@@ -291,7 +301,7 @@
         }
         let slideIndex = 1;
         function plusSlides(n) {
-        showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
         function showSlides(n) {
             let i;
@@ -309,7 +319,6 @@
                 // document.getElementById("hov").innerHTML= slideIndex.toString();
             }
             if (slideIndex === 1){
-                console.log(slideIndex);
                 document.getElementById("fsl1").style.visibility="visible";
                 document.getElementById("fct1").style.visibility="visible";
                 document.getElementById("fnt1").style.visibility="visible";
@@ -322,5 +331,34 @@
             slideIndex = index;
             showSlides(index);
         }
+        function updateCursor(event){
+                var el = document.getElementById("marco");
+                if (el.style.display == "none") {
+                    el.style.display = "block"
+                }
+                var el2 = document.getElementById("marcon");
+                if (event.clientX > vw / 2) {
+                    el2.textContent = "NEXT"
+                } else {
+                    el2.textContent = "PREV"
+                }
+                el.style.top = event.pageY + "px";
+                el.style.left = event.pageX + "px";
+        }
+        function changeSlides(event){
+                if (event.clientX > vw / 2) {
+                    plusSlides(1)
+                } else {
+                    plusSlides(-1)
+                }
+        }
+        function hideCursor(){
+            console.log("hi")
+            var el = document.getElementById("marco");
+            if (el.style.display == "block") {
+                el.style.display = "none"
+            }
+        }
+        document.getElementById('slideshow fade').style.cursor = 'none';
     </script>
 </html>
