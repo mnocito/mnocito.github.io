@@ -209,6 +209,7 @@ a:hover, a:focus, a:active {
     .about_statement{
         position: absolute;
         margin-left: 16px;
+        z-index:100;
         top: 55px;
         /* bottom:54px; */
         width: 343px;

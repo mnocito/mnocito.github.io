@@ -230,11 +230,10 @@
     </body>
     <script type="text/javascript">
         var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-        window.addEventListener("resize", resizeEventHandler, false);
-        var resizeEventHandler = function () {
-            print("resize")
+        window.onresize = function(event) {
+            console.log("resize")
             vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) 
-        }
+        };
 
 
         var scrollEventHandler = function() {
